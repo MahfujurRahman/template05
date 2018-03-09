@@ -1,16 +1,85 @@
 /* Medium Layout: 1280px. */
 @media only screen and (min-width: 992px) and (max-width: 1200px) { 
-  
+.col-md-5 {
+    padding: 0;
+}
+.images img {
+    height: 45%;
+    width: 45%;
+}
+.singel-item h1 {
+    font-size: 50px;
+}
+.singel-item p {
+    font-size: 14px;
+    padding: 20px 0px;
+    line-height: 30px;
+}
+.sectio-icon {
+    margin-bottom: 35px;
+}
+.sectio-icon a {
+    font-size: 20px;
+}
     
 }
 /* Tablet Layout: 768px. */
 @media only screen and (min-width: 768px) and (max-width: 991px) { 
- 
+    .images img {
+        width: 25%;
+        height: 25%;
+    }
+
+    body {
+        height: auto;
+    }
+
+    .singel-item h1::after {
+        width: 55px;
+    }
+
+    .singel-item p {
+        padding: 20px 100px 18px 0px;
+        letter-spacing: 1px;
+        font-size: 18px;
+    }
+
+    .sectio-icon a {
+        padding: 0px 20px 0px 0px;
+    }
+
+    .template.full-height {
+        padding: 35px 0px 0px 40px;
+    }
     
 }
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) { 
- 
+    .images img {
+        width: 40%;
+        height: 40%;
+    }
+    body {
+        height: auto;
+    }
+    .template {
+        padding-top: 50px;
+        padding-left: 15px;
+    }
+    .singel-item h1 {
+        font-size: 40px;
+    }
+     
+    .singel-item h1::after {
+        width: 35px;
+    }
+    .singel-item p {
+        font-size: 15px;
+    }
+    .sectio-icon a {
+        padding: 10px;
+        font-size: 18px;
+    }
     
 }
 /* Wide Mobile Layout: 480px. */

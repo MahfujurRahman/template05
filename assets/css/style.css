@@ -35,11 +35,11 @@ body{
 
 .singe-service-item {
   position: relative;
-  padding: 150px 0px 0px 150px;
+  padding: 130px 0px 0px 60px;
 }
 .images {
-  width: 14rem;
-  margin-bottom: 70px;
+  width: 13.4rem;
+  margin-bottom: 60px;
 }
 .images img {
   border-radius: 100%;
@@ -67,13 +67,13 @@ body:before {
   width: 3%;
   background-color: rgba(255,255,255,0.749);
   position: absolute;
-  margin-top: 5px;
+  margin-top: 2rem;
 }
 .singel-contain p {
   font-size: 1.6rem;
   line-height: 2.25rem;
   color: rgba(255,255,255,0.749);
-  margin-top: 3rem;
+  margin-top: 5rem;
   font-weight: 200;
 }
 .singel-contain {
@@ -87,7 +87,7 @@ body:before {
   color: rgba(255,255,255,0.392);
 }
 .sectio-icon {
-  margin-top: 2rem;
+  margin-top: 3.125rem;
 }
 
 .sectio-icon a:hover {

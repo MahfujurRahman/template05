@@ -25,11 +25,12 @@ h6 {
     margin: 0 0 15px;
     font-weight: 700;
 }
-
+html, body, .height-full{
+  height: 100%;
+}
 body{
   font-family: 'Source Sans Pro';
   position: relative;
-  padding-bottom: 10%;
 }
 
 .singe-service-item {

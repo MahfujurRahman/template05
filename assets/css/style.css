@@ -167,6 +167,7 @@ body:before {
 .singel-contain > * {
     margin-top: 1.625rem;
     margin-bottom: 1.625rem;
+    transition: opacity 1s ease-in-out 0s;
 }
 
 .images {
@@ -186,21 +187,17 @@ p {
     font-weight: 200;
 }
 
-h1{
-  transition-delay: 0.125s;
-}
 
-.singel-contain hr {
+hr {
   width: 100%;
   position: relative;
   padding: 0;
   border: 0;
   height: 0.5rem;
   line-height: 0.5rem;
-  transition-delay: 0.25s;
 }
 
-.singel-contain hr::before {
+hr::before {
   content: '';
   display: inline-block;
   vertical-align: middle;
@@ -211,14 +208,10 @@ h1{
 
 p {
     color: rgba(255, 255, 255, 0.749);
-    transition-delay: 0.375s;
     font-size: 1.25em;
     line-height: 1.55;
 }
 
-.sectio-icon{
-  transition-delay: 0.5s;
-}
 
 .sectio-icon a {
     font-size: 1.3em;
@@ -288,4 +281,27 @@ body::after {
         margin-top: 1.21875rem;
         margin-bottom: 1.21875rem;
     }
+}
+
+
+body:before {
+  pointer-events: none;
+  transform: scale(1);
+}
+
+.singel-contain > * {
+  transition: opacity 1s ease-in-out 0s;
+}
+.singel-contain > h1{
+  transition-delay: 5.125s;
+}
+.singel-contain > hr{
+  transition-delay: 0.25s;
+}
+.singel-contain > p{
+  transition-delay: 0.375s;
+}
+
+.singel-contain > .sectio-icon{
+  transition-delay: 0.5s;
 }

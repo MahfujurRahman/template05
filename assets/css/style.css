@@ -190,7 +190,7 @@ h1{
   transition-delay: 0.125s;
 }
 
-hr {
+.singel-contain hr {
   width: 100%;
   position: relative;
   padding: 0;
@@ -200,7 +200,7 @@ hr {
   transition-delay: 0.25s;
 }
 
-hr::before {
+.singel-contain hr::before {
   content: '';
   display: inline-block;
   vertical-align: middle;
@@ -229,6 +229,24 @@ p {
 
 .sectio-icon a:hover svg {
     color: #fff;
+}
+
+
+
+body::after {
+
+  display: block;
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #7F87B2;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease-in-out 0s, visibility 1s 0s;
 }
 
 @media (max-width: 1680px) {

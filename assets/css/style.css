@@ -1,4 +1,4 @@
-/* Base CSS */
+/* Base CSS
 .alignleft {
     float: left;
     margin-right: 15px;
@@ -95,4 +95,179 @@ body:before {
 
 .sectio-icon a:hover {
   color: #fff;
+} */
+
+/* / Base CSS / */
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+a:focus {
+    outline: 0 solid
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+
+html {
+    font-size: 18pt;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    color: #fff;
+    font-family: 'Source Sans Pro';
+    display: grid;
+    align-content: center;
+    font-size: inherit;
+}
+
+body:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(155deg, #D18282 1%, #5877A8 70%);
+    position: fixed;
+}
+
+.singe-service-item {
+    padding: 3.75rem 3rem;
+    max-width: 44rem;
+}
+
+.col-md-12 {
+    padding: 0;
+}
+
+.singel-contain > * {
+    margin-top: 1.625rem;
+    margin-bottom: 1.625rem;
+}
+
+.images {
+    margin-bottom: 1.625rem;
+    transition: opacity 1s ease-in-out 0s;
+}
+
+.images img {
+    width: 10rem;
+    border-radius: 50%;
+}
+
+h1,
+p {
+    font-size: 3.125em;
+    line-height: 1.175;
+    font-weight: 200;
+}
+
+h1{
+  transition-delay: 0.125s;
+}
+
+hr {
+  width: 100%;
+  position: relative;
+  padding: 0;
+  border: 0;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  transition-delay: 0.25s;
+}
+
+hr::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 8%;
+  background-color: rgba(255,255,255,0.392);
+  height: 1px;
+}
+
+p {
+    color: rgba(255, 255, 255, 0.749);
+    transition-delay: 0.375s;
+    font-size: 1.25em;
+    line-height: 1.55;
+}
+
+.sectio-icon{
+  transition-delay: 0.5s;
+}
+
+.sectio-icon a {
+    font-size: 1.3em;
+    margin: 0.6875rem;
+    color: rgba(255,255,255,0.392);
+    display: inline-block;
+}
+
+.sectio-icon a:hover svg {
+    color: #fff;
+}
+
+@media (max-width: 1680px) {
+    html {
+        font-size: 13pt;
+    }
+}
+
+@media (max-width: 1280px) {
+    html {
+        font-size: 13pt;
+    }
+
+}
+@media (max-width: 980px) {
+    html {
+        font-size: 11pt;
+    }
+
+}
+
+@media (max-width: 736px) {
+    .singe-service-item {
+        padding: 3.5rem 2rem;
+    }
+}
+
+@media screen and (max-width:480){
+    .singel-contain > * {
+        margin-top: 1.421875rem;
+        margin-bottom: 1.421875rem;
+    }
+}
+@media (max-width: 360px) {
+    .singe-service-item {
+        padding: 2.625rem 1.5rem;
+    }
+    .singel-contain > * {
+        margin-top: 1.21875rem;
+        margin-bottom: 1.21875rem;
+    }
 }
